@@ -1,0 +1,189 @@
+/* styles for the whole page */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: white;
+}
+
+body {
+	width: 800px;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	background-color: #fffded;
+	margin: 0 auto 0 auto;
+	border: 3px solid #931420;
+}
+
+/* styles for the header */
+header {
+	border-bottom: 3px solid #931420;
+	padding: 1.5em 0 2em 0;
+	background-image: linear-gradient(30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
+}
+
+header img {
+	float: left;
+	padding: 0 30px 0 30px;
+}
+
+header h2 {
+	font-size: 170%;
+	color:#800000;
+}
+
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+
+.shadow {
+	text-shadow: 3px 3px 6px #800000;
+}
+
+/*styles for SPECIFICALLY the nav menu*/
+#nav-menu {
+	list-style: none;
+	margin: 0;
+	padding:0;
+	position: relative;
+}
+
+#nav-menu li {
+	float: left;
+}
+
+#nav-menu a {
+	display: block;
+	width: 10em;
+	text-align: center;
+	padding: 1em 0 1em 0;
+	text-decoration: none;
+	font-weight: bold;
+	color:white; /*the current class keeps inheriting this when i don't want it to :(*/
+	background-color: #800000;
+}
+
+#nav-menu::after {
+	padding-top: 100px;
+	clear: inherit;
+	display: block;
+}
+
+.submenu {
+	display: none;
+	position: absolute;
+	float: none;
+	list-style-type: circle;
+	color: white;
+}
+
+#nav-menu li:hover .submenu {
+	display: block;
+}
+
+/* styles for the main element */
+/* god i wish you could nest multiple css selectors into one collapsible thing */
+main {
+	clear: left;
+	/*top, right, bottom, left*/
+}
+
+/* styles for just the section */
+section {
+	float: right;
+	margin-left: 1em;
+	padding-right: 0.5em;
+	width: 525px;
+}
+
+section h1 {
+	font-size: 150%;
+	color: #800000;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+
+section h2 {
+	font-size: 130%;
+	padding-top: .5em;
+	padding-bottom:.25em;
+}
+
+section p {
+	padding-bottom: .5em;
+}
+
+/* styles for the article */
+
+article {
+	padding: 0.5em 0 1em 0;
+}
+
+article h2 {
+	padding-top: 0;
+}
+
+article h3 {
+	padding-bottom: 0.25em;
+ }
+
+article img {
+	border: 1px solid black;
+	float: right;
+	margin: 0.5em;
+}
+
+/* styles for the aside */
+aside {
+	width: 215px;
+	float: left;
+	padding: 0 0 20px 20px;
+	margin-right: 1em;
+}
+
+aside .speakers {
+	border: 4px double #931420;
+	border-radius: 15px;
+	padding: .5em 1em .5em 1em;
+	margin: 0.5em 0 1em 0;
+	background-color: white;
+	box-shadow: 5px 5px 1px black;
+}
+
+aside h2 {
+	font-size: 130%;
+	color: #800000;
+	padding-top: .5em;
+	padding-bottom:.25em;
+}
+
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+aside a:hover {
+	font-style: italic;
+}
+
+aside img {
+	padding-bottom: 1em;
+}
+
+/* styles for the footer */
+footer {
+	background-color: #931420;
+	border: 3px solid #931420;
+	clear: both;
+}
+
+footer p {
+	padding: 1em 0 1em 0;
+	text-align: center;
+	color: white;
+}
